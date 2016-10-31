@@ -1,0 +1,681 @@
+@font-face {
+  font-family: 'GTPressura';
+  src: url('/static/GT-Pressura-Mono-Regular.otf');
+}
+
+@font-face {
+  font-family: 'GTPressuraLight';
+  src: url('/static/GT-Pressura-Mono-Light.otf');
+}
+
+@font-face {
+  font-family: 'GTWalsheimLight';
+  src: url('/static/GT-Walsheim-Pro-Light.otf');
+}
+
+@font-face {
+  font-family: 'GTWalsheimRegular';
+  src: url('/static/GT-Walsheim-Pro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'GTWalsheimMedium';
+  src: url('/static/GT-Walsheim-Pro-Medium.otf');
+}
+
+@font-face {
+  font-family: 'GTWalsheimBold';
+  src: url('/static/GT-Walsheim-Pro-Bold.otf');
+}
+
+*:focus {
+    outline: none;
+}
+
+.clearfix {
+  clear: both;
+  padding: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mainlink {
+  text-decoration: none;
+  color: white;
+}
+
+.blacklink {
+  text-decoration: none;
+  color: black;
+}
+
+.yellowhoverlink {
+  text-decoration: none;
+  color: black;
+  transition: all .25s linear;
+}
+
+.yellowhoverlink:hover {
+  color: #ffc107;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url(/static/hero.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  padding: 0px 0px 65px;
+}
+
+.nav {
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+
+.nav2 {
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+.nav2 p {
+  color: white;
+  font-family: GTWalsheimLight;
+  margin: 0px 20px;
+  cursor: pointer;
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+.nav2 p:nth-of-type(3) {
+  border: 2px solid #ffc107;
+  border-radius: 24px;
+  padding: 9px 22px 10px;
+}
+
+.nav2 p:nth-of-type(1) {
+  margin-top: 14px;
+}
+
+.nav2 p:nth-of-type(2) {
+  margin-top: 14px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.logo {
+  font-family: GTPressuraLight;
+  color: white;
+  font-size: 26px;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.main-title-container {
+  padding-top: 94px;
+}
+
+.main-title {
+  font-family: GTWalsheimBold;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+
+.main-subtitle {
+  font-family: GTWalsheimLight;
+  color: white;
+  margin: 20px 200px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: .2px;
+}
+
+.main-subtitle-button {
+  color: white;
+  font-family: GTWalsheimLight;
+  margin: 0px 20px;
+  cursor: pointer;
+  margin-top: 4px;
+  font-size: 22px;
+  text-align: center;
+  border: 2px solid #ffc107;
+  border-radius: 24px;
+  padding: 9px 34px 10px;
+  width: 140px;
+  margin: 0 auto;
+  transition: all .2s;
+}
+
+.main-subtitle-button:hover {
+  background-color: #ffc107;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.34);
+}
+
+.mid {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.mid > div {
+  width: 400px;
+  margin: 0 auto;
+  float: left;
+  padding: 0px 30px;
+}
+
+.mid > div p {
+  text-align: center;
+  font-family: GTWalsheimLight;
+}
+
+.mid > div p:nth-of-type(1) {
+  font-size: 22px;
+  font-family: GTWalsheimRegular;
+  padding: 20px 0px;
+}
+
+.mid > div p:nth-of-type(2) {
+  color: #a5a5a5;
+}
+
+.breaker {
+  background-color: #ffc107;
+  height: 90px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.breaker p {
+  color: white;
+  text-align: center;
+  margin: 0px 200px;
+  padding: 20px 0px;
+  font-size: 20px;
+  font-family: GTWalsheimRegular;
+}
+
+.workshops {
+  width: 1050px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.workshop-main-title {
+  font-family: GTWalsheimRegular;
+  text-align: center;
+  font-size: 22px;
+}
+
+.workshop-list > div {
+  width: 350px;
+  float: left;
+  padding: 0px 30px;
+}
+
+.workshop-date {
+  display: flex;
+  flex-direction: row;
+}
+
+.workshop-list {
+  margin-top: 40px;
+}
+
+.workshop-list > div {
+  text-align: left;
+}
+
+.workshop-list p {
+  font-family: GTWalsheimRegular;
+  margin: 5px 0px ;
+  font-size: 18px;
+}
+
+ .workshop-list i {
+  margin-top: 5px;
+  margin-right: 8px;
+ }
+
+.workshop-list p:nth-of-type(2) {
+  font-size: 20px;
+  font-family: GTWalsheimMedium
+}
+
+.workshop-list-button {
+  font-family: GTWalsheimRegular;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 22px;
+  text-align: center;
+  border: 2px solid #ffc107;
+  border-radius: 24px;
+  padding: 9px 34px 10px;
+  width: 190px;
+  transition: all .2s linear;
+}
+
+.workshop-list-button:hover {
+  color: white;
+  background-color: #ffc107;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.34);
+}
+
+.who-we-are-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+  padding-top: 40px;
+}
+
+.whomain {
+  background-color: #fafafa;
+  border-top: 1px solid #ededed;
+}
+
+.who-i-am {
+  width: 500px;
+  padding: 0px 30px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.who-i-am img {
+  width: 200px;
+  height: 200px;
+}
+
+.who-we-are-title {
+  font-family: GTWalsheimRegular;
+  font-size: 22px;
+  text-align: center;
+}
+
+.who-i-am * {
+  font-family: GTWalsheimRegular;
+}
+
+.who-desc p {
+  margin-left: 20px;
+}
+
+.who-desc p:nth-of-type(1) {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.who-desc i  {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 7px;
+  cursor: pointer;
+  transition: all .25s linear;
+}
+
+.who-desc i:hover {
+  color: #ffc107;
+}
+
+.who-desc i:nth-of-type(1)  {
+  margin-left: 20px;
+}
+
+.our-projects {
+  border-top: 1px solid #ededed;
+  padding: 50px;
+}
+
+.projects-container {
+  width: 999px;
+  margin: 0 auto;
+}
+
+.project {
+  text-align: center;
+  margin-top: 20px;
+  width: 333px;
+  padding: 0px 20px;
+  float: left;
+}
+
+.project * {
+  font-family: GTWalsheimRegular;
+}
+
+.project p:nth-of-type(1) {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.us-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  padding: 40px 0px 45px;
+  border-top: 4px solid #ffc107;
+  background-color: #dddddd;
+}
+
+.footer * {
+  color: #666666;
+  font-family: GTPressuraLight;
+  text-align: center;
+}
+
+.overlay {
+  width: 700px;
+  height: 400px;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  margin-left: -350px;
+  top: 50%;
+  margin-top: -200px;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0,0,0, .2);
+  border: 1px solid #ededed;
+  padding: 20px;
+  display: none;
+}
+
+.city-request {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ededed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-request p {
+  font-family: GTWalsheimRegular;
+}
+
+.city-reqeust-title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.city-request .city-request-button {
+  font-size: 22px;
+  width: 230px;
+  border: 3px solid #ededed;
+  margin-left: 20px;
+  padding: 9px 34px;
+  text-align: center;
+  border-radius: 999px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .25s linear;
+}
+
+.city-request-button:hover {
+  background-color: #ededed;;
+}
+
+.dismiss {
+  color: #666666;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 40px;
+  transition: all .25s linear;
+}
+
+.dismiss:hover {
+  opacity: .5;
+}
+
+.overlay * {
+  font-family: GTPressuraLight;
+}
+
+.overlay-title {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.overlay-button-submit {
+  margin: 0 auto;
+  background-color: #ffc107;
+  padding: 15px;
+  width: 320px;
+  margin: 0 auto;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .25s linear;
+}
+
+.overlay-button-submit p {
+  color: white;
+  font-family: GTWalsheimLight;
+  text-align: center;
+  font-size: 22px;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.14);
+}
+
+.overlay-input {
+  height: 50px;
+  border: 1px solid #ededed;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 0px 10px;
+  margin: 40px 0px;
+}
+
+
+.overlay-button-submit:hover {
+  background-color: black;
+}
+
+/* media queries */
+
+@media(max-width: 1199px) {
+  .mid {
+    width: 100%;
+  }
+  .mid > div {
+    float: none;
+    width: 100%;
+  }
+  .breaker {
+    height: auto;
+  }
+  .breaker p {
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+    padding: 0px 20px; 
+    height: auto;
+  }
+  .main-title-container {
+    padding-top: 40px;
+  }
+  .main-subtitle {
+    padding-top: 40px;
+    margin: 20px 40px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .workshops {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  .workshop-list {
+    margin-top: 14px;
+  }
+  .workshop-list > div {
+    width: 100%;
+    float: none;
+    padding: 20px;
+  }
+  .single-workshop-container {
+    border-bottom: 1px solid #ededed;
+  }
+  .workshop-list > div p {
+    text-align: center;
+  }
+  .workshop-date {
+    justify-content: center;
+  }
+  .workshop-list-button {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 15px
+  }
+  .who-we-are-container {
+    width: 100%;
+  }
+  .who-i-am {
+    width: 100%;
+    text-align: center;
+  }
+  .us-icons {
+    width: 80px;
+    margin: 0 auto;
+  }
+  .projects-container {
+    width: 100%;
+  }
+  .project {
+    width: 100%;
+  }
+  .city-request {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 739px) {
+  .main-subtitle {
+    padding-top: 0px;
+  }
+  .main-title-container {
+    padding-top: 15px;
+  }
+  .hero {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .nav {
+    width: 360px;
+    margin: 0 auto;
+    float: none;
+  }
+  .nav2 p {
+    width: 220px !important;
+  }
+  .nav2 {
+    flex-direction: column;
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    padding-top: 0px;
+    margin-top: -10px;
+  }
+  .nav2 p:nth-of-type(3) {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 18px
+  }
+  .corporate-training {
+    border: 2px solid #ffc107;
+    border-radius: 24px;
+    padding: 9px 22px 10px;
+    width: 220px;
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+  }
+  .who-i-am {
+    flex-direction: column
+  }
+  .who-i-am img {
+    margin: 0 auto;
+  }
+  .who-desc p:nth-of-type(1) {
+    margin-top: 15px;
+  }
+  .city-request {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .logo {
+    margin-left: 0;
+    padding: 0px 20px;
+  }
+  .icon {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+  .container {
+    padding: 0px;
+  }
+  .main-title {
+    padding: 0px 10px;
+  }
+} 
+
+@media (max-width: 740px) {
+  .overlay {
+    width: 300px;
+    margin-left: -150px;
+  }
+  .overlay-input {
+    width: 100%;
+  }
+  .overlay-button-submit {
+    width: 220px;
+  }
+  .overlay-title {
+    padding-top: 20px;
+  }
+
+}
+
+.no-border {
+  border: none;
+}
