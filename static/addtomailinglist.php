@@ -2,7 +2,7 @@
 if(isset($_POST['message'])) {
 
     $email_to = "info@reactnative.training";
-    $email_subject = "React Native Training City Request";
+    $email_subject = "React Native Training Email Address";
 
     function died($error) {
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
@@ -18,7 +18,6 @@ if(isset($_POST['message'])) {
     }
 
     $message = $_POST['message']; // required
-    $email_from = $_POST['email'];
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -35,9 +34,8 @@ if(isset($_POST['message'])) {
       return str_replace($bad,"",$string);
     }
 
-    $email_message .= "React Native Training City Request Form Submitted."."\n";
+    $email_message .= "React Native Training Add To Email List Form Submitted."."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
 
 
 // create email headers

@@ -106,6 +106,12 @@
   border: 2px solid #ffc107;
   border-radius: 24px;
   padding: 9px 22px 10px;
+  transition: all .25s linear;
+}
+
+.nav2 p:nth-of-type(3):hover {
+  background-color: #ffc107;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.24);
 }
 
 .nav2 p:nth-of-type(1) {
@@ -299,14 +305,19 @@
   width: 500px;
   padding: 0px 30px;
   float: left;
-  display: flex;
   flex-direction: row;
   margin-top: 30px;
 }
 
 .who-i-am img {
-  width: 200px;
   height: 200px;
+  width: 200px;
+}
+
+.who-i-am-img-container {
+  width: 200px; 
+  height: 200px;
+  float: left;
 }
 
 .who-we-are-title {
@@ -317,6 +328,11 @@
 
 .who-i-am * {
   font-family: GTWalsheimRegular;
+}
+
+.who-desc {
+  float: left;
+  width: 240px;
 }
 
 .who-desc p {
@@ -379,7 +395,7 @@
 .footer {
   padding: 40px 0px 45px;
   border-top: 4px solid #ffc107;
-  background-color: #dddddd;
+  background-color: black;
 }
 
 .footer * {
@@ -445,7 +461,7 @@
   color: #666666;
   text-align: center;
   cursor: pointer;
-  padding-top: 40px;
+  padding-top: 30px;
   transition: all .25s linear;
 }
 
@@ -460,7 +476,7 @@
 .overlay-title {
   font-size: 24px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .overlay-button-submit {
@@ -469,6 +485,7 @@
   padding: 15px;
   width: 320px;
   margin: 0 auto;
+  margin-top: 10px;
   border-radius: 999px;
   cursor: pointer;
   transition: all .25s linear;
@@ -488,12 +505,102 @@
   width: calc(100% - 40px);
   margin: 0 auto;
   padding: 0px 10px;
-  margin: 40px 0px;
+  margin: 10px 0px;
 }
 
+.overlay-input:nth-of-type(1) {
+  margin-top: 20px;
+}
+
+.overlay-input:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+.emailsubmitcontainer {
+  padding: 20px;
+  width: 900px;
+  margin: 0 auto;
+}
+.emailsubmit {
+  float: left;
+}
+
+.emailsubmit1 {
+  width: 325px;
+}
+
+.emailsubmit2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.emailsubmit-title1 {
+  font-family: GTWalsheimMedium;
+}
+
+.emailsubmit-title2 {
+  font-family: GTWalsheimRegular;
+  margin-top: 4px;
+}
 
 .overlay-button-submit:hover {
   background-color: black;
+}
+
+.emailsubmitinput {
+  height: 50px;
+  font-size: 22px;
+  font-family: GTWalsheimRegular;
+  border: 1px solid #dddddd;
+  width: 250px;
+  padding: 0px 10px;
+}
+
+.emailsubmitbutton {
+  cursor: pointer;
+  font-family: GTWalsheimRegular;
+  padding: 13px 28px;
+  margin-left: 20px;
+  border: 2px solid #ffc107;
+  border-radius: 999px;
+  font-size: 18px;
+}
+
+.emailsubmitbutton:hover {
+  color: white;
+
+  background-color: #ffc107; 
+  transition: all .25s linear;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.14);
+}
+
+.what-youll-learn {
+  background-color: #ffffff;
+  border-top: 1px solid #ededed;
+}
+
+.what-youll-learn-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 55px;
+  padding-top: 50px;
+}
+
+.what-youll-learn-title {
+  font-family: GTWalsheimRegular;
+  font-size: 22px;
+  text-align: center;
+  margin: 0px 236px 20px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+}
+
+.what-youll-learn-contents p {
+  text-align: center;
+  font-family: GTWalsheimRegular;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 200;
 }
 
 /* media queries */
@@ -532,6 +639,30 @@
 }
 
 @media (max-width: 1050px) {
+  .what-youll-learn-container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .what-youll-learn-title {
+    width: 525px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .who-i-am-img-container  {
+    width: 100%;
+    float: none;
+  }
+  .who-desc {
+    width: 100%;
+    float: none;
+  }
+  .who-i-am {
+    float: none;
+  }
+  .who-desc p:nth-of-type(1) {
+    margin-top: 15px;
+  }
   .workshops {
     width: 100%;
     padding-bottom: 10px;
@@ -634,6 +765,30 @@
   .city-request {
     flex-direction: column;
   }
+  .emailsubmitcontainer {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .emailsubmit1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .emailsubmit2 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .emailsubmitinput {
+    margin: 0 auto;
+    width: calc(100% - 30px);
+  }
+  .emailsubmitbutton {
+    text-align: center;
+    margin-top: 18px;
+    width: calc(100% - 30px);
+    margin: 20px auto 5px
+  }
 }
 
 @media (max-width: 450px) {
@@ -671,9 +826,15 @@
     width: 220px;
   }
   .overlay-title {
-    padding-top: 20px;
+    padding-top: 0px;
+    font-size: 22px;
   }
+}
 
+@media (max-width: 525px) {
+  .what-youll-learn-title {
+    width:100%;
+  }
 }
 
 .no-border {
