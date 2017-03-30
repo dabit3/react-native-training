@@ -6,7 +6,14 @@ $(document).ready(function() {
 
   $('.scrolltoworkshops').click(function() {
      $('html, body').animate({
-          scrollTop: $("#upcomingworkshops").offset().top - 60
+          scrollTop: $("#upcomingworkshops").offset().top - 30
+      }, 600);
+  })
+
+
+  $('.scrolltous').click(function() {
+     $('html, body').animate({
+          scrollTop: $("#whomain").offset().top - 30
       }, 600);
   })
 

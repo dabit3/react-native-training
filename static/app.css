@@ -28,8 +28,16 @@
   src: url('/static/GT-Walsheim-Pro-Bold.otf');
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  color: #444;
+}
+
 *:focus {
     outline: none;
+}
+
+.nav-container a {
+  text-decoration: none;
 }
 
 .clearfix {
@@ -98,28 +106,21 @@
   font-family: GTWalsheimLight;
   margin: 0px 20px;
   cursor: pointer;
-  margin-top: 4px;
+  margin-top: 14px;
   font-size: 18px;
 }
 
-.nav2 p:nth-of-type(3) {
-  border: 2px solid #ffc107;
-  border-radius: 24px;
-  padding: 9px 22px 10px;
-  transition: all .25s linear;
+.nav2 p:hover {
+  color: #ffc107;
 }
 
-.nav2 p:nth-of-type(3):hover {
-  background-color: #ffc107;
-  text-shadow: 0px 1px 1px rgba(0,0,0,.24);
+.nav2 p a {
+  color: white;
+  text-decoration: none;
 }
 
-.nav2 p:nth-of-type(1) {
-  margin-top: 14px;
-}
-
-.nav2 p:nth-of-type(2) {
-  margin-top: 14px;
+.nav2 p a:hover {
+  color: #ffc107;
 }
 
 .icon {
@@ -166,7 +167,7 @@
   border: 2px solid #ffc107;
   border-radius: 24px;
   padding: 9px 34px 10px;
-  width: 140px;
+  width: 165px;
   margin: 0 auto;
   transition: all .2s;
 }
@@ -298,7 +299,6 @@
 
 .whomain {
   background-color: #fafafa;
-  border-top: 1px solid #ededed;
 }
 
 .who-i-am {
@@ -361,7 +361,6 @@
 }
 
 .our-projects {
-  border-top: 1px solid #ededed;
   padding: 50px;
 }
 
@@ -423,32 +422,32 @@
 .city-request {
   width: 100%;
   margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #ededed;
+  padding-top: 45px;
+  padding-bottom: 45px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fafafa;
 }
 
 .city-request p {
   font-family: GTWalsheimRegular;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.city-reqeust-title {
-  margin-top: 20px;
+.city-request-title {
   text-align: center;
 }
 
 .city-request .city-request-button {
-  font-size: 22px;
+  font-size: 18px;
   width: 230px;
   border: 3px solid #ededed;
-  margin-left: 20px;
   padding: 9px 34px;
   text-align: center;
   border-radius: 999px;
-  margin-top: 20px;
   cursor: pointer;
   transition: all .25s linear;
 }
@@ -576,7 +575,6 @@
 
 .what-youll-learn {
   background-color: #ffffff;
-  border-top: 1px solid #ededed;
 }
 
 .what-youll-learn-container {
@@ -590,13 +588,78 @@
   font-family: GTWalsheimRegular;
   font-size: 22px;
   text-align: center;
-  margin: 0px 236px 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 210px;
   border-bottom: 1px solid #000000;
   padding-bottom: 10px;
 }
 
 .what-youll-learn-contents p {
   text-align: center;
+  font-family: GTWalsheimRegular;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.corporate-training-copy {
+  text-align: center !important;
+  font-family: GTWalsheimRegular;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.corporate-training-copy-link {
+  text-align: center;
+  margin-top: 20px !important;
+  font-size: 16px !important;
+}
+
+.corporate-training-copy-link a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.corporate-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100% !important;
+}
+
+.corporate {
+  width: 230px;
+  color: black ;
+}
+
+.corporate:hov {
+  width: 190px;
+  color: black ;
+}
+
+.workshop-list a {
+  text-decoration: none;
+}
+
+.city-request-button {
+  width: 190px;
+  color: black ;
+}
+
+.city-request-button:hov {
+  width: 190px;
+  color: black ;
+}
+
+.online-training-container {
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.online-training-content {
+  text-align: center !important;
   font-family: GTWalsheimRegular;
   margin-bottom: 20px;
   font-size: 20px;
@@ -639,6 +702,12 @@
 }
 
 @media (max-width: 1050px) {
+  .mid > div p {
+    padding-bottom: 7px !important;
+  }
+  .city-request {
+    margin-top: 0px;
+  }
   .what-youll-learn-container {
     width: 100%;
     padding-right: 10px;
@@ -674,7 +743,10 @@
   .workshop-list > div {
     width: 100%;
     float: none;
-    padding: 20px;
+  }
+  .workshop-list {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .single-workshop-container {
     border-bottom: 1px solid #ededed;
@@ -708,11 +780,14 @@
     width: 100%;
   }
   .city-request {
-    margin-bottom: 40px;
+    
   }
 }
 
 @media (max-width: 739px) {
+  .city-request-title {
+    margin-bottom: 20px;
+  }
   .main-subtitle {
     padding-top: 0px;
   }
@@ -829,6 +904,12 @@
     padding-top: 0px;
     font-size: 22px;
   }
+  .nav2 p {
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
 }
 
 @media (max-width: 525px) {
