@@ -36,6 +36,15 @@ p, h1, h2, h3, h4, h5, h6 {
     outline: none;
 }
 
+.yellow-link {
+  text-decoration: none;
+  color: #ffc107;
+}
+
+.yellow-link:hover {
+  text-decoration: underline;
+}
+
 .nav-container a {
   text-decoration: none;
 }
@@ -78,13 +87,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  background-image: url(/static/hero.png);
+  /*background-image: url(/static/hero.png);*/
+  background-image: url(/static/rntraining6.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -webkit-background-size: cover;
   background-color: #464646;
   padding: 0px 0px 65px;
+  -webkit-background-position: center center;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-attachment: fixed;
 }
 
 .nav {
@@ -630,8 +644,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .corporate {
-  width: 230px;
+  width: 300px;
   color: black ;
+}
+
+.pdf-button-container {
+  margin-top: 5px !important;
 }
 
 .corporate:hov {
@@ -702,6 +720,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1050px) {
+  .hero {
+    background-attachment: scroll;
+  }
+  .pdf-button-container {
+    margin-bottom: 20px;
+  }
   .mid > div p {
     padding-bottom: 7px !important;
   }
