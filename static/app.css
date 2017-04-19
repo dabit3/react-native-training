@@ -28,6 +28,10 @@
   src: url('/static/GT-Walsheim-Pro-Bold.otf');
 }
 
+/*
+  main yellow color is #ffc107
+*/
+
 p, h1, h2, h3, h4, h5, h6 {
   color: #444;
 }
@@ -447,7 +451,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .city-request p {
   font-family: GTWalsheimRegular;
-  width: 70%;
   margin: 0 auto;
 }
 
@@ -704,7 +707,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .container {
     width: 100%;
     padding: 0px 20px; 

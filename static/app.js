@@ -7,6 +7,12 @@ $(document).ready(function() {
   $('.scrolltoworkshops').click(function() {
      $('html, body').animate({
           scrollTop: $("#upcomingworkshops").offset().top - 30
+      }, 900);
+  })
+
+  $('.scrolltoprivatetraining').click(function() {
+     $('html, body').animate({
+          scrollTop: $("#onsitetraining").offset().top - 30
       }, 600);
   })
 
