@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'GTPressura';
-  src: url('/static/GT-Pressura-Mono-Regular.otf');
+  src: url('GT-Pressura-Mono-Regular.otf');
 }
 
 @font-face {
   font-family: 'GTPressuraLight';
-  src: url('/static/GT-Pressura-Mono-Light.otf');
+  src: url('GT-Pressura-Mono-Light.otf');
 }
 
 @font-face {
   font-family: 'GTWalsheimLight';
-  src: url('/static/GT-Walsheim-Pro-Light.otf');
+  src: url('GT-Walsheim-Pro-Light.otf');
 }
 
 @font-face {
   font-family: 'GTWalsheimRegular';
-  src: url('/static/GT-Walsheim-Pro-Regular.otf');
+  src: url('GT-Walsheim-Pro-Regular.otf');
 }
 
 @font-face {
   font-family: 'GTWalsheimMedium';
-  src: url('/static/GT-Walsheim-Pro-Medium.otf');
+  src: url('GT-Walsheim-Pro-Medium.otf');
 }
 
 @font-face {
   font-family: 'GTWalsheimBold';
-  src: url('/static/GT-Walsheim-Pro-Bold.otf');
+  src: url('GT-Walsheim-Pro-Bold.otf');
 }
 
 /*
@@ -91,8 +91,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  /*background-image: url(/static/hero.png);*/
-  background-image: url(/static/rntraining6.jpg);
+  /*background-image: url(hero.png);*/
+  background-image: url(rntraining6.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
