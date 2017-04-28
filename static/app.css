@@ -239,7 +239,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: GTWalsheimRegular;
 }
 
-.workshops {
+.on-site-training {
   width: 1050px;
   margin: 0 auto;
   margin-top: 30px;
@@ -248,16 +248,22 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
 }
 
-.workshop-main-title {
+.on-site-training-main-title {
   font-family: GTWalsheimRegular;
   text-align: center;
   font-size: 22px;
 }
 
-.workshop-list > div {
+.offering-list > div {
   width: 350px;
   float: left;
   padding: 0px 30px;
+}
+
+.workshop-main-title {
+  font-family: GTWalsheimRegular;
+  text-align: center;
+  font-size: 22px;
 }
 
 .workshop-date {
@@ -265,31 +271,31 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
 }
 
-.workshop-list {
+.offering-list {
   margin-top: 40px;
 }
 
-.workshop-list > div {
+.offering-list > div {
   text-align: left;
 }
 
-.workshop-list p {
+.offering-list p {
   font-family: GTWalsheimRegular;
   margin: 5px 0px ;
   font-size: 18px;
 }
 
- .workshop-list i {
+ .offering-list i {
   margin-top: 5px;
   margin-right: 8px;
  }
 
-.workshop-list p:nth-of-type(2) {
+.offering-list p:nth-of-type(2) {
   font-size: 20px;
   font-family: GTWalsheimMedium
 }
 
-.workshop-list-button {
+.offering-list-button {
   font-family: GTWalsheimRegular;
   cursor: pointer;
   margin-top: 10px;
@@ -302,7 +308,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: all .2s linear;
 }
 
-.workshop-list-button:hover {
+.offering-list-button:hover {
   color: white;
   background-color: #ffc107;
   text-shadow: 0px 1px 1px rgba(0,0,0,.34);
@@ -437,7 +443,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.city-request {
+.workshop {
   width: 100%;
   margin-top: 40px;
   padding-top: 45px;
@@ -449,16 +455,16 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #fafafa;
 }
 
-.city-request p {
+.workshop p {
   font-family: GTWalsheimRegular;
   margin: 0 auto;
 }
 
-.city-request-title {
+.workshop-title {
   text-align: center;
 }
 
-.city-request .city-request-button {
+.workshop .workshop-button {
   font-size: 18px;
   width: 230px;
   border: 3px solid #ededed;
@@ -469,7 +475,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: all .25s linear;
 }
 
-.city-request-button:hover {
+.workshop-button:hover {
   background-color: #ededed;;
 }
 
@@ -639,7 +645,33 @@ p, h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.workshop-copy {
+  text-align: center !important;
+  font-family: GTWalsheimRegular;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.workshop-copy-link {
+  text-align: center;
+  margin-top: 20px !important;
+  font-size: 16px !important;
+}
+
+.workshop-copy-link a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
 .corporate-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100% !important;
+}
+
+.workshop-button-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -660,16 +692,16 @@ p, h1, h2, h3, h4, h5, h6 {
   color: black ;
 }
 
-.workshop-list a {
+.offering-list a {
   text-decoration: none;
 }
 
-.city-request-button {
+.workshop-button {
   width: 190px;
   color: black ;
 }
 
-.city-request-button:hov {
+.workshop-button:hov {
   width: 190px;
   color: black ;
 }
@@ -732,7 +764,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .mid > div p {
     padding-bottom: 7px !important;
   }
-  .city-request {
+  .workshop {
     margin-top: 0px;
   }
   .what-youll-learn-container {
@@ -759,32 +791,32 @@ p, h1, h2, h3, h4, h5, h6 {
   .who-desc p:nth-of-type(1) {
     margin-top: 15px;
   }
-  .workshops {
+  .on-site-training {
     width: 100%;
     padding-bottom: 10px;
     margin-bottom: 0px;
   }
-  .workshop-list {
+  .offering-list {
     margin-top: 14px;
   }
-  .workshop-list > div {
+  .offering-list > div {
     width: 100%;
     float: none;
   }
-  .workshop-list {
+  .offering-list {
     padding-left: 20px;
     padding-right: 20px;
   }
   .single-workshop-container {
     border-bottom: 1px solid #ededed;
   }
-  .workshop-list > div p {
+  .offering-list > div p {
     text-align: center;
   }
   .workshop-date {
     justify-content: center;
   }
-  .workshop-list-button {
+  .offering-list-button {
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 15px
@@ -806,13 +838,13 @@ p, h1, h2, h3, h4, h5, h6 {
   .project {
     width: 100%;
   }
-  .city-request {
+  .workshop {
     
   }
 }
 
 @media (max-width: 739px) {
-  .city-request-title {
+  .workshop-title {
     margin-bottom: 20px;
   }
   .main-subtitle {
@@ -864,7 +896,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .who-desc p:nth-of-type(1) {
     margin-top: 15px;
   }
-  .city-request {
+  .workshop {
     flex-direction: column;
   }
   .emailsubmitcontainer {
