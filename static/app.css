@@ -53,6 +53,10 @@ p, h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+a.current-page{
+  color: #ffc107!important;
+}
+
 .clearfix {
   clear: both;
   padding: 0 !important;
@@ -103,6 +107,14 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-background-position: center center;
   -webkit-background-repeat: no-repeat;
   -webkit-background-attachment: fixed;
+}
+
+.hero-workshop-sf {
+  background-image: url(sf.jpg);
+}
+
+.bg-lightgrey {
+  background-color: #fafafa;
 }
 
 .nav {
@@ -163,6 +175,14 @@ p, h1, h2, h3, h4, h5, h6 {
   color: white;
   font-size: 36px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.main-title span{
+  font-size: 30px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 .main-subtitle {
@@ -825,6 +845,164 @@ section.workshops-section p.workshop-button {
   border-radius: 999px;
   cursor: pointer;
   transition: all .25s linear;
+}
+
+/* Single Workshop Page */
+section.ticket-purchases {
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.ticket-purchases div.pricing-info {
+  width: 30%;
+  float:left;
+  margin: 0 auto;
+  margin-left: 15%;
+}
+
+section.ticket-purchases div.workshop-details {
+  width: 40%;
+  float:left;
+  margin: 0 auto;
+  margin-right: 10%;
+  padding-top: 20px;
+}
+
+section.ticket-purchases a {
+  text-decoration: none;
+}
+
+h2.workshop-price-heading {
+  font-family: GTWalsheimRegular;
+  text-align: center;
+  font-size: 48px;
+}
+
+p.workshop-price {
+  font-family: sans-serif;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+
+p.workshop-price sup.dollar-sign{
+  font-size: 24px;
+}
+
+p.workshop-date-time{
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-bottom: 5px;
+}
+
+p.workshop-venue{
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+div.workshop-details span.host-this-workshop {
+  font-size: 14px;
+}
+
+div.workshop-details p.workshop-additional-details {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.workshop-ticket-purchase-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100% !important;
+}
+
+.workshop-ticket-purchase-button {
+  font-family: GTWalsheimLight;
+  margin: 0px 20px;
+  cursor: pointer;
+  margin-top: 4px;
+  font-size: 22px;
+  text-align: center;
+  border: 2px solid #ffc107;
+  border-radius: 24px;
+  padding: 9px 34px 10px;
+  width: 300px;
+  color:black;
+  margin: 0 auto;
+  transition: all .2s;
+}
+
+.workshop-ticket-purchase-button:hover {
+  background-color: #ffc107;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.34);
+}
+
+section.workshop-what-youll-learn {
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+section.workshop-what-youll-learn h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+section.workshop-what-youll-learn div.curriculum-row {
+  width: 100%;
+  padding: 40px 10% 100px 10%;
+}
+
+section.workshop-what-youll-learn div.curriculum-row div.curriculum-item {
+  width: 50%;
+  float:left;
+  padding-left: 5%;
+  padding-right: 5%
+}
+
+section.workshop-what-youll-learn div.curriculum-row div.curriculum-item h3 {
+  text-align: center;
+}
+
+section.workshop-what-youll-learn div.curriculum-row div.curriculum-item p {
+  text-align: center;
+}
+
+section.workshop-whos-this-for {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+section.workshop-whos-this-for h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section.workshop-what-to-expect {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+section.workshop-what-to-expect h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* media queries */
