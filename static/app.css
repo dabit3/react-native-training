@@ -845,6 +845,7 @@ section.workshops-section p.workshop-button {
     padding: 20px;
     padding-bottom: 30px;
   }
+  
 }
 
 @media (max-width: 1200px) {
@@ -946,10 +947,23 @@ section.workshops-section p.workshop-button {
   .project {
     width: 100%;
   }
-  .workshop {
-    
+  
+ 
+  section.workshops-section div.workshop-listings div.workshop-listing{
+    width: 100%;
   }
-}
+
+  section.workshops-section div.workshop-listings div.workshop-listing p.workshop-description{
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  section.workshops-section div.city-request-container p.city-request-copy {
+    padding-top: 20px;
+  }
+} 
 
 @media (max-width: 739px) {
   .workshop-title {
@@ -1082,6 +1096,12 @@ section.workshops-section p.workshop-button {
 @media (max-width: 525px) {
   .what-youll-learn-title {
     width:100%;
+  }
+}
+
+@media (max-width: 400px) {
+  section.workshops-section div.workshop-listings div.workshop-listing p.workshop-description{
+    width: 250px;
   }
 }
 
