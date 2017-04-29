@@ -855,20 +855,20 @@ section.ticket-purchases {
   padding-bottom: 40px;
   margin: 0 auto;
   text-align: center;
+  width: 1000px;
+  display:flex;
 }
 
 section.ticket-purchases div.pricing-info {
-  width: 30%;
+  width: 400px;
   float:left;
   margin: 0 auto;
-  margin-left: 15%;
 }
 
 section.ticket-purchases div.workshop-details {
-  width: 40%;
+  width: 600px;
   float:left;
   margin: 0 auto;
-  margin-right: 10%;
   padding-top: 20px;
 }
 
@@ -1140,6 +1140,35 @@ section.workshop-what-to-expect h2 {
   }
   section.workshops-section div.city-request-container p.city-request-copy {
     padding-top: 20px;
+  }
+
+  section.ticket-purchases {
+    width: 100%;
+    display:block;
+  }
+  section.ticket-purchases div.pricing-info {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section.ticket-purchases div.workshop-details {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  section.ticket-purchases div.workshop-details p.workshop-additional-details {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%px;
+  }
+
+  p.workshop-date-time {
+    font-size: 20px;
+  }
+
+  p.workshop-venue {
+    font-size: 18px;
   }
 } 
 
