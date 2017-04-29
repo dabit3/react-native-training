@@ -24,11 +24,11 @@
 }
 
 p, a, div {
-  font-family: GTWaslheimRegular;
+  font-family: GTWalsheimRegular;
 }
 
 h1, h2, h3 {
-  font-family: GTWaslheimBold;
+  font-family: GTWalsheimBold;
 }
 
 /*
@@ -790,14 +790,14 @@ section.workshops-section div.workshop-listing p.workshop-date-city__state {
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
-  font-family: GTWaslheimLight;
+  font-family: GTWalsheimLight;
   font-weight: lighter;
   padding-bottom: 5px;
 }
 
 section.workshops-section div.workshop-listing p.workshop-location {
   text-align: center;
-  font-family: GTWaslheimLight;
+  font-family: GTWalsheimLight;
   font-weight: 300;
 }
 
@@ -843,7 +843,7 @@ section.workshops-section div.city-request-container{
 
 section.workshops-section div.city-request-container p.city-request-copy {
   padding-top: 100px;
-  font-family: GTWaslheimRegular;
+  font-family: GTWalsheimRegular;
 }
 section.workshops-section a {
   text-decoration: none;
@@ -896,7 +896,7 @@ h2.workshop-price-heading {
 }
 
 p.workshop-price {
-  font-family: GTWaslheimBold;
+  font-family: GTWalsheimBold;
   font-size: 46px;
   margin-bottom: 30px;
 }
@@ -909,7 +909,7 @@ p.workshop-date-time{
   text-align: center;
   font-size: 28px;
   text-transform: uppercase;
-  font-family: GTWaslheimLight;
+  font-family: GTWalsheimLight;
   font-weight: lighter;
   padding-bottom: 5px;
 }
@@ -918,7 +918,7 @@ p.workshop-venue{
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
-  font-family: GTWaslheimLight;
+  font-family: GTWalsheimLight;
   font-weight: lighter;
 }
 
