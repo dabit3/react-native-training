@@ -113,6 +113,10 @@ a.current-page{
   background-image: url(sf.jpg);
 }
 
+.hero-workshop-nyc {
+  background-image: url(nyc.jpg);
+}
+
 .bg-lightgrey {
   background-color: #fafafa;
 }
@@ -747,6 +751,12 @@ section.workshops-section {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 40px;
+  width: 100%;
+}
+
+div.workshop-section-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section.workshops-section p {
