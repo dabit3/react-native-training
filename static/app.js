@@ -52,27 +52,27 @@ $(document).ready(function() {
       }
   })
 
-  $('#emailsubmit').click(function() {
-      var message = $('#emailinput').val();
-      var varData = 'message=' + message;
+  // $('#emailsubmit').click(function() {
+  //     var message = $('#emailinput').val();
+  //     var varData = 'message=' + message;
 
-      if((message != "")) {
-          $.ajax({
-              type: "POST",
-              url: "/static/addtomailinglist.php",
-              data: varData,
-              success: function() {
-                  $('#emailinput').val('');
-                  $('.overlay').hide()
-                  swal({
-                    title: "Thanks",
-                    text: "You've been added to our email list!",
-                    type: "success",
-                    confirmButtonText: "OK" });
-              }
-          });
-          return false;
-      }
-  })
+  //     if((message != "")) {
+  //         $.ajax({
+  //             type: "POST",
+  //             url: "/static/addtomailinglist.php",
+  //             data: varData,
+  //             success: function() {
+  //                 $('#emailinput').val('');
+  //                 $('.overlay').hide()
+  //                 swal({
+  //                   title: "Thanks",
+  //                   text: "You've been added to our email list!",
+  //                   type: "success",
+  //                   confirmButtonText: "OK" });
+  //             }
+  //         });
+  //         return false;
+  //     }
+  // })
 
 });
