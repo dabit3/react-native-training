@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | React Native Training - Professional Private and Classroom React Native Training</title>
+  <meta
+    name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel='shortcut icon' href='static/favicon.png' type='image/x-icon'/ >
+  <link rel='stylesheet' href='static/app.css' >
+  <link rel='stylesheet' href='node_modules/normalize.css/normalize.css'>
+  <link rel="stylesheet" href="static/fa/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- begin hero -->
+  <div class='hero'>
+    <div class="container">
+      <!-- nav container -->
+      <div class='nav-container'>
+        <div style="padding: 0px 20px">
+          <a href="/">
+            <div class='nav'>
+              <img src='static/react.png' class='icon' />
+              <p class='logo'>react native training</p>
+            </div>
+          </a>
+        </div>
+        <div class='nav2'>
+          <p style="display: none;">About</p>
+          <p class='scrolltoprivatetraining'>On Site Training</p>
+          <p class='scrolltoworkshops'>Workshops</p>
+          <p class='scrolltoonline'><a target="_blank" href="https://github.com/react-native-training">Open Source</a></p>
+          <p><a href="https://medium.com/react-native-training" target="_blank">Blog</a></p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <!-- end nav container -->
+      <!-- hero copy -->
+      <div class='main-title-container'>
+        <p class='main-title'>
+          Contact Us
+        </p>
+        <p class='main-subtitle'>
+          React Native Training is a hands on learning experience, covering everything from the fundamentals to advanced React Native development techniques by the most experienced React Native developers in the world.
+        </p>
+        <p class='main-subtitle-button scrolltous'>
+          About Us
+        </p>
+      </div>
+      <!-- end hero copy -->
+    </div>
+  </div>
+  <!-- end hero -->
+
+  <div class="rnt-contact-container">
+    <form class="rnt-contact-form" action="https://formspree.io/jc@jchiatt.com"
+      method="POST">
+      <h2 class="rnt-contact-form-heading">Contact Us</h2>
+      <p class="rnt-contact-form-text">Use our form below, our email us directly:<br><span>info@reactnative.training</span></p>
+
+      <div class="rnt-contact-form-fields">
+        <select name="inquiry-type" id="rnt-inquiry-type" required>
+          <option disabled selected value="">What's this about?</option>
+          <option value="Corporate Training">Corporate Training</option>
+          <option value="Workshops">Workshops</option>
+          <option value="General Inquiry">General Inquiry</option>
+        </select>
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="text" name="_replyto" placeholder="Your email" required>
+        <textarea name="rnt-contact-message" placeholder="Type your message here"></textarea>
+        <input type="hidden" name="_subject" value="New contact form submission">
+        <input type="text" name="_gotcha" style="display:none">
+        <input class="rnt-contact-submit" type="submit" value="Send">
+      </div>
+    </form>
+  </div>
+
+  <style>
+    div.rnt-contact-container {
+      height: 800px;
+    }
+
+    .rnt-contact-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .rnt-contact-form-heading {
+      font-size: 88px;
+      font-family: "GTWalsheimBold";
+      text-align: center;
+      color: #1c1c1c;
+    }
+
+    .rnt-contact-form-text {
+      font-size: 24px;
+      font-family: "GTWalsheimBold";
+      text-align: center;
+    }
+
+    .rnt-contact-form-text span {
+      color: #ffc107;
+      border-bottom: 1px solid #000;
+    }
+
+    .rnt-contact-form-fields {
+      margin: 0 auto;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 460px;
+    }
+    
+    .rnt-contact-form-fields input, .rnt-contact-form-fields textarea, .rnt-contact-form-fields select, .rnt-contact-form-fields option {
+      background: none;
+      border-top: #000 1px solid;
+      border-left: #000 1px solid;
+      border-bottom: #000 3px solid;
+      border-right: #000 3px solid;
+      border-radius: none;
+      color: #1c1c1c;
+      font-size: 26px;
+      font-family: "GTWalsheimBold";
+      margin-top: 16px;
+    }
+
+    .rnt-contact-form-fields select, .rnt-contact-form-fields input {
+      height: 45px;
+    }
+
+    .rnt-contact-form-fields select {
+      text-transform: lowercase;
+    }
+
+    .rnt-contact-form-fields select option {
+      color: #1c1c1c;
+    }
+
+    .rnt-contact-form-fields input::-webkit-input-placeholder {
+      padding-left: 10px;
+      text-transform: lowercase;
+    }
+    .rnt-contact-form-fields input::-moz-placeholder{
+      padding-left: 10px;
+      text-transform: lowercase;
+    }
+    .rnt-contact-form-fields input:-ms-input-placeholder {
+      padding-left: 10px;
+      text-transform: lowercase;
+    }
+    .rnt-contact-form-fields input:-moz-placeholder {
+      padding-left: 10px;
+      text-transform: lowercase;
+    }
+
+    .rnt-contact-form-fields textarea {
+      height: 125px;
+    }
+
+    .rnt-contact-form-fields textarea::-webkit-input-placeholder {
+      padding-left: 10px;
+      text-transform: lowercase;
+    }
+    .rnt-contact-form-fields textarea::-moz-placeholder {
+      padding-left: 10px;
+      text-transform: lowercase;
+    }
+    .rnt-contact-form-fields textarea:-ms-input-placeholder {
+      padding-left: 10px;
+      text-transform: lowercase;
+    }
+    .rnt-contact-form-fields textarea:-moz-placeholder {
+      padding-left: 10px;
+      text-transform: lowercase;
+    }
+
+    .rnt-contact-form-fields .rnt-contact-submit {
+      height: 80px;
+      color: #fff;
+      background-color: #ffc107;
+      border: none;
+    }
+
+
+    @media(max-width: 500px) {
+      .rnt-contact-form-heading {
+        font-size: 48px;
+      }
+
+      .rnt-contact-form-text {
+        font-size: 13px;
+      }
+
+      .rnt-contact-form-fields {
+        margin-top: 25px;
+        width: 300px;
+      }
+
+      .rnt-contact-form-fields input, .rnt-contact-form-fields textarea, .rnt-contact-form-fields select, .rnt-contact-form-fields option {
+        font-size: 22px;
+      }
+
+      .rnt-contact-form-fields .rnt-contact-submit {
+        height: 60px;
+        color: #fff;
+        background-color: #ffc107;
+        border: none;
+      }
+    }
+
+  </style>
+  
+
+  <!-- begin footer -->
+  <div class='footer'>
+    <p>&copy; 2017 React Native Training <a href="mailto:info@reactnative.training" style="color: #ffc107; text-decoration: none;">info@reactnative.training</a></p>
+  </div>
+  <!-- end footer -->
+
+
+  <script src='static/jquery.min.js'></script>
+  <script src='static/app.js'></script>
+  <script src='static/contactForm.js'></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-86549528-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+</html>
