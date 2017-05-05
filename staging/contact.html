@@ -6,10 +6,10 @@
   <meta
     name="viewport"
     content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel='shortcut icon' href='static/favicon.png' type='image/x-icon'/ >
-  <link rel='stylesheet' href='static/app.css' >
-  <link rel='stylesheet' href='node_modules/normalize.css/normalize.css'>
-  <link rel="stylesheet" href="static/fa/css/font-awesome.min.css">
+  <link rel='shortcut icon' href='../static/favicon.png' type='image/x-icon'/ >
+  <link rel='stylesheet' href='../static/app.css' >
+  <link rel='stylesheet' href='../node_modules/normalize.css/normalize.css'>
+  <link rel="stylesheet" href="../static/fa/css/font-awesome.min.css">
 </head>
 <body>
   <!-- begin hero -->
@@ -20,7 +20,7 @@
         <div style="padding: 0px 20px">
           <a href="/">
             <div class='nav'>
-              <img src='static/react.png' class='icon' />
+              <img src='../static/react.png' class='icon' />
               <p class='logo'>react native training</p>
             </div>
           </a>
@@ -128,9 +128,7 @@
 
     .rnt-contact-form-fields select, .rnt-contact-form-fields input {
       height: 45px;
-    }
-
-    .rnt-contact-form-fields select {
+      padding-left: 10px;
       text-transform: lowercase;
     }
 
@@ -138,40 +136,8 @@
       color: #1c1c1c;
     }
 
-    .rnt-contact-form-fields input::-webkit-input-placeholder {
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-    .rnt-contact-form-fields input::-moz-placeholder{
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-    .rnt-contact-form-fields input:-ms-input-placeholder {
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-    .rnt-contact-form-fields input:-moz-placeholder {
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-
     .rnt-contact-form-fields textarea {
       height: 125px;
-    }
-
-    .rnt-contact-form-fields textarea::-webkit-input-placeholder {
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-    .rnt-contact-form-fields textarea::-moz-placeholder {
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-    .rnt-contact-form-fields textarea:-ms-input-placeholder {
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-    .rnt-contact-form-fields textarea:-moz-placeholder {
       padding-left: 10px;
       text-transform: lowercase;
     }
@@ -181,6 +147,12 @@
       color: #fff;
       background-color: #ffc107;
       border: none;
+    }
+
+    .rnt-contact-form-fields .rnt-contact-submit:hover {
+      color: #ffc107;
+      background-color: #000;
+      cursor: pointer;
     }
 
 
@@ -220,9 +192,9 @@
   <!-- end footer -->
 
 
-  <script src='static/jquery.min.js'></script>
-  <script src='static/app.js'></script>
-  <script src='static/contactForm.js'></script>
+  <script src='../static/jquery.min.js'></script>
+  <script src='../static/app.js'></script>
+  <script src='../static/contactForm.js'></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
