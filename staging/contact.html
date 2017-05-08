@@ -10,6 +10,15 @@
   <link rel='stylesheet' href='../static/app.css' >
   <link rel='stylesheet' href='../node_modules/normalize.css/normalize.css'>
   <link rel="stylesheet" href="../static/fa/css/font-awesome.min.css">
+  <script src="../static/vex.combined.min.js"></script>
+  <script>
+    vex.defaultOptions.className = 'vex-theme-wireframe'
+    vex.dialog.buttons.YES.text = 'send'
+  </script>
+  <link rel="stylesheet" href="../static/vex.css">
+  <link rel="stylesheet" href="../static/vex-theme-wireframe.css">
+  <link rel="stylesheet" href="../static/contactForm.css">
+  <script src="../static/contactForm.js"></script>
 </head>
 <body>
   <!-- begin hero -->
@@ -52,144 +61,9 @@
   </div>
   <!-- end hero -->
 
-  <div class="rnt-contact-container">
-    <form class="rnt-contact-form" action="https://formspree.io/jc@jchiatt.com"
-      method="POST">
-      <h2 class="rnt-contact-form-heading">Contact Us</h2>
-      <p class="rnt-contact-form-text">Use our form below, our email us directly:<br><span>info@reactnative.training</span></p>
-
-      <div class="rnt-contact-form-fields">
-        <select name="inquiry-type" id="rnt-inquiry-type" required>
-          <option disabled selected value="">What's this about?</option>
-          <option value="Corporate Training">Corporate Training</option>
-          <option value="Workshops">Workshops</option>
-          <option value="General Inquiry">General Inquiry</option>
-        </select>
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="text" name="_replyto" placeholder="Your email" required>
-        <textarea name="rnt-contact-message" placeholder="Type your message here"></textarea>
-        <input type="hidden" name="_subject" value="New contact form submission">
-        <input type="text" name="_gotcha" style="display:none">
-        <input class="rnt-contact-submit" type="submit" value="Send">
-      </div>
-    </form>
-  </div>
-
-  <style>
-    div.rnt-contact-container {
-      height: 800px;
-    }
-
-    .rnt-contact-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .rnt-contact-form-heading {
-      font-size: 88px;
-      font-family: "GTWalsheimBold";
-      text-align: center;
-      color: #1c1c1c;
-    }
-
-    .rnt-contact-form-text {
-      font-size: 24px;
-      font-family: "GTWalsheimBold";
-      text-align: center;
-    }
-
-    .rnt-contact-form-text span {
-      color: #ffc107;
-      border-bottom: 1px solid #000;
-    }
-
-    .rnt-contact-form-fields {
-      margin: 0 auto;
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 460px;
-    }
-    
-    .rnt-contact-form-fields input, .rnt-contact-form-fields textarea, .rnt-contact-form-fields select, .rnt-contact-form-fields option {
-      background: none;
-      border-top: #000 1px solid;
-      border-left: #000 1px solid;
-      border-bottom: #000 3px solid;
-      border-right: #000 3px solid;
-      border-radius: none;
-      color: #1c1c1c;
-      font-size: 26px;
-      font-family: "GTWalsheimBold";
-      margin-top: 16px;
-    }
-
-    .rnt-contact-form-fields select, .rnt-contact-form-fields input {
-      height: 45px;
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-
-    .rnt-contact-form-fields select option {
-      color: #1c1c1c;
-    }
-
-    .rnt-contact-form-fields textarea {
-      height: 160px;
-      max-width: 460px;
-      padding-left: 10px;
-      text-transform: lowercase;
-    }
-
-    .rnt-contact-form-fields .rnt-contact-submit {
-      height: 80px;
-      color: #fff;
-      background-color: #ffc107;
-      border: none;
-    }
-
-    .rnt-contact-form-fields .rnt-contact-submit:hover {
-      color: #ffc107;
-      background-color: #000;
-      cursor: pointer;
-    }
-
-
-    @media(max-width: 500px) {
-      .rnt-contact-form-heading {
-        font-size: 48px;
-      }
-
-      .rnt-contact-form-text {
-        font-size: 13px;
-      }
-
-      .rnt-contact-form-fields {
-        margin-top: 25px;
-        width: 300px;
-      }
-
-      .rnt-contact-form-fields input, .rnt-contact-form-fields textarea, .rnt-contact-form-fields select, .rnt-contact-form-fields option {
-        font-size: 22px;
-      }
-
-      .rnt-contact-form-fields textarea {
-        max-width: 300px;
-      }
-
-      .rnt-contact-form-fields .rnt-contact-submit {
-        height: 60px;
-        color: #fff;
-        background-color: #ffc107;
-        border: none;
-      }
-    }
-
-  </style>
   
-
+  <button onClick="contactForm()" style="width:100%;">Click me</button>
+    
   <!-- begin footer -->
   <div class='footer'>
     <p>&copy; 2017 React Native Training <a href="mailto:info@reactnative.training" style="color: #ffc107; text-decoration: none;">info@reactnative.training</a></p>

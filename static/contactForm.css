@@ -1,0 +1,158 @@
+div.rnt-contact-container {
+  height: 800px;
+}
+
+.rnt-contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rnt-contact-form-heading {
+  font-size: 88px;
+  font-family: "GTWalsheimBold";
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.rnt-contact-form-text {
+  font-size: 24px;
+  font-family: "GTWalsheimBold";
+  text-align: center;
+}
+
+.rnt-contact-form-text span {
+  color: #ffc107;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.rnt-contact-form-text span a {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.rnt-contact-form-text span a:hover {
+  color: #000;
+}
+
+.rnt-contact-form-fields {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 460px;
+}
+
+.rnt-contact-form-fields input, .rnt-contact-form-fields textarea, .rnt-contact-form-fields select, .rnt-contact-form-fields option {
+  background: none;
+  border-top: #000 1px solid;
+  border-left: #000 1px solid;
+  border-bottom: #000 3px solid;
+  border-right: #000 3px solid;
+  border-radius: none;
+  color: #1c1c1c;
+  font-size: 26px;
+  font-family: "GTWalsheimBold";
+  margin-top: 16px;
+}
+
+.rnt-contact-form-fields select, .rnt-contact-form-fields input {
+  height: 45px;
+  padding-left: 10px;
+  text-transform: lowercase;
+}
+
+.rnt-contact-form-fields select option {
+  color: #1c1c1c;
+}
+
+.rnt-contact-form-fields textarea {
+  height: 160px;
+  max-width: 460px;
+  padding-left: 10px;
+  text-transform: lowercase;
+}
+
+.rnt-contact-form-fields .rnt-contact-submit {
+  height: 80px;
+  color: #fff;
+  background-color: #ffc107;
+  border: none;
+  padding: 0;
+}
+
+.rnt-contact-form-fields .rnt-contact-submit:hover {
+  color: #ffc107;
+  background-color: #000;
+  cursor: pointer;
+}
+
+
+@media(max-width: 500px) {
+  .rnt-contact-form-heading {
+    font-size: 48px;
+  }
+
+  .rnt-contact-form-text {
+    font-size: 13px;
+  }
+
+  .rnt-contact-form-fields {
+    margin-top: 25px;
+    width: 300px;
+  }
+
+  .rnt-contact-form-fields input, .rnt-contact-form-fields textarea, .rnt-contact-form-fields select, .rnt-contact-form-fields option {
+    font-size: 22px;
+  }
+
+  .rnt-contact-form-fields textarea {
+    max-width: 300px;
+  }
+
+  .rnt-contact-form-fields .rnt-contact-submit {
+    height: 60px;
+    color: #fff;
+    background-color: #ffc107;
+    border: none;
+    padding: 0;
+  }
+}
+
+/* Modal Styles */
+.vex-content .rnt-contact-form-heading {
+  font-size: 52px;
+}
+
+.vex-content .rnt-contact-form-text {
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.vex-content .rnt-contact-form-fields {
+  width: 100%;
+}
+
+.vex-content .vex-dialog-button-primary {
+  width: 100%;
+  height: 80px;
+  color: #fff!important;
+  background-color: #ffc107!important;
+  font-size: 26px!important;
+  font-family: "GTWalsheimBold"!important;
+  text-transform: lowercase!important;
+  letter-spacing: unset!important;
+}
+
+.vex-content .vex-dialog-button-primary:hover {
+  background-color: #000!important;
+  color: #ffc107!important;
+}
+
+.vex-dialog-button-secondary {
+  display: none;
+}
