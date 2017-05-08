@@ -503,7 +503,7 @@ a.current-page{
 }
 
 .workshop-button:hover {
-  background-color: #ededed;;
+  background-color: #ededed;
 }
 
 .dismiss {
@@ -854,7 +854,7 @@ section.workshops-section a {
   text-decoration: none;
 }
 
-section.workshops-section p.workshop-button {
+section.workshops-section button.workshop-button {
   font-size: 18px;
   width: 230px;
   border: 3px solid #ededed;
@@ -863,6 +863,11 @@ section.workshops-section p.workshop-button {
   border-radius: 999px;
   cursor: pointer;
   transition: all .25s linear;
+  background-color: transparent;
+}
+
+section.workshops-section button.workshop-button:hover {
+  background-color: #ededed;
 }
 
 /* Single Workshop Page */

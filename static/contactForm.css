@@ -1,3 +1,10 @@
+/************************************
+This CSS is written to work whether
+you use the modal version (by calling
+contactForm() ) or if you put the 
+form markup directly on the page.
+************************************/
+
 div.rnt-contact-container {
   height: 800px;
 }

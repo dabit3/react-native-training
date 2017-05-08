@@ -10,6 +10,15 @@
   <link rel='stylesheet' href='static/app.css' >
   <link rel='stylesheet' href='node_modules/normalize.css/normalize.css'>
   <link rel="stylesheet" href="static/fa/css/font-awesome.min.css">
+  <script src="static/vex.combined.min.js"></script>
+  <script>
+    vex.defaultOptions.className = 'vex-theme-wireframe'
+    vex.dialog.buttons.YES.text = 'send'
+  </script>
+  <link rel="stylesheet" href="static/vex.css">
+  <link rel="stylesheet" href="static/vex-theme-wireframe.css">
+  <link rel="stylesheet" href="static/contactForm.css">
+  <script src="static/contactForm.js"></script>
 </head>
 <body>
   <!-- begin hero -->
@@ -86,13 +95,11 @@
       <p class='corporate-training-copy'>
         Our private on site training aims to get your developers up and running as quickly as possible. The training covers all of the most important areas of the framework, dives deep into the fundamentals and important APIs, and addresses any challenges that are common that may slow down development time.<br /><br />Trainings are tailored to each individual team and company.
        </p>
-       <a href="mailto:privatetraining@reactnative.training">
-         <div class="corporate-button-container">
-           <p class='main-subtitle-button corporate'>
-             Learn More
-           </p>
-         </div>
-       </a>
+       <div class="corporate-button-container">
+         <p class='main-subtitle-button corporate' onClick="contactForm()">
+           Learn More
+         </p>
+       </div>
        <a href="http://reactnative.training/reactnativefundamentals.pdf" target="_blank">
          <div class="corporate-button-container pdf-button-container">
            <p class='main-subtitle-button corporate'>
@@ -149,13 +156,11 @@
          </p>
       </div>
       <div class="get-in-touch">
-        <a href="#">
-         <div class="workshop-button-container">
-           <p class='workshop-button'>
-             Get in Touch
-           </p>
-         </div>
-        </a>
+       <div class="workshop-button-container">
+         <button class='workshop-button' onClick="contactForm()">
+           Get in Touch
+         </button>
+       </div>
       </div>
     </div>
   </section>

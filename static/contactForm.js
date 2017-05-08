@@ -1,3 +1,21 @@
+/****************************** 
+TO USE THIS CONTACT FORM:
+
+1. Include the following scripts/styles on the page (be sure to double check the paths):
+<script src="../static/vex.combined.min.js"></script>
+<script>
+  vex.defaultOptions.className = 'vex-theme-wireframe'
+  vex.dialog.buttons.YES.text = 'send'
+</script>
+<link rel="stylesheet" href="../static/vex.css">
+<link rel="stylesheet" href="../static/vex-theme-wireframe.css">
+<link rel="stylesheet" href="../static/contactForm.css">
+<script src="../static/contactForm.js"></script>
+
+2. You can now call contactForm() anywhere you want to use the contact form in a modal.
+Ex: <button onClick="contactForm()">Contact Us</button>
+******************************/
+
 var contactForm = function() {
   vex.dialog.open({
     showCloseButton: true,
