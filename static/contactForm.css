@@ -63,7 +63,6 @@ div.rnt-contact-container {
 .rnt-contact-form-fields select, .rnt-contact-form-fields input {
   height: 45px;
   padding-left: 10px;
-  text-transform: lowercase;
 }
 
 .rnt-contact-form-fields select option {
@@ -74,7 +73,6 @@ div.rnt-contact-container {
   height: 160px;
   max-width: 460px;
   padding-left: 10px;
-  text-transform: lowercase;
 }
 
 .rnt-contact-form-fields .rnt-contact-submit {
@@ -91,6 +89,16 @@ div.rnt-contact-container {
   cursor: pointer;
 }
 
+.rnt-contact-form-fields .react-spinner {
+  display: none;
+  height: 50px;
+  animation: react-spin infinite 2s linear;
+}
+
+@keyframes react-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
 @media(max-width: 500px) {
   .rnt-contact-form-heading {
