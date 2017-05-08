@@ -37,6 +37,15 @@ var contactForm = function() {
               $.extend({}, vex.dialog.buttons.YES, { text: 'Close' }),
             ]
           })
+        },
+        error: function(error) {
+          vex.dialog.open({
+            message: 'Something went wrong. Please try again.',
+            buttons: [
+              $.extend({}, vex.dialog.buttons.YES, { text: 'Close' }),
+            ]
+          })
+          console.log(error)
         }
       })
     }
