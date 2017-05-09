@@ -64,7 +64,7 @@ var contactForm = function() {
     ].join(''),
     callback: function (data) {
       if (!data) {
-        return console.log('Cancelled')
+        return console.log('Canceled')
       }
       $('.react-spinner').show();
       $.ajax({
