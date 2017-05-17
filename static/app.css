@@ -124,6 +124,10 @@ a.current-page{
   background-color: #fafafa;
 }
 
+.bg-white {
+  background-color: #ffffff;
+}
+
 .nav {
   padding: 15px 0px;
   display: flex;
@@ -182,13 +186,13 @@ a.current-page{
   color: white;
   font-size: 36px;
   text-align: center;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .main-title span{
   font-size: 30px;
-  font-family: sans-serif;
-  text-transform: uppercase;
+  font-family: GTWalsheimRegular;
+  /*text-transform: uppercase;*/
   font-weight: lighter;
 }
 
@@ -788,7 +792,8 @@ section.workshops-section div.workshop-listing {
 section.workshops-section div.workshop-listing h3 {
   text-align: center;
   font-size: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 section.workshops-section div.workshop-listing p.workshop-date-city__state {
@@ -813,7 +818,8 @@ section.workshops-section div.workshop-listing p.workshop-location span.host-thi
 section.workshops-section div.workshop-listing div.workshop-register-button-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   width: 100% !important;
 }
 
@@ -1000,6 +1006,8 @@ section.workshop-what-youll-learn div.curriculum-row div.curriculum-item h3 {
 
 section.workshop-what-youll-learn div.curriculum-row div.curriculum-item p {
   text-align: center;
+  margin: 10px 0px;
+  font-size: 18px;
 }
 
 section.workshop-whos-this-for {
@@ -1319,6 +1327,10 @@ section.workshop-what-to-expect h2 {
     width: 100% !important;
     margin-left: 0px !important;
     margin-right: 0px !important;
+  }
+
+  section.workshop-what-youll-learn div.curriculum-row div.curriculum-item {
+    width: 100%;
   }
 
 }
