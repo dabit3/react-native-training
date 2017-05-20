@@ -1036,7 +1036,15 @@ section.workshop-what-to-expect h2 {
   margin-bottom: 30px;
 }
 
-/* media queries */
+.location-link {
+  color: #a5a5a5 !important;
+}
+
+.location-link:hover {
+  color: #ffc107 !important;
+}
+
+/* begin media queries */
 
 @media(max-width: 1199px) {
   .mid {
