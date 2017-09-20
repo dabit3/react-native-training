@@ -121,7 +121,7 @@ a.current-page{
 }
 
 .bg-lightgrey {
-  background-color: #fafafa;
+  background-color: #f6f6f6;
 }
 
 .bg-white {
@@ -353,7 +353,7 @@ a.current-page{
 }
 
 .whomain {
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 
 .who-i-am {
@@ -417,6 +417,8 @@ a.current-page{
 
 .our-projects {
   padding: 50px;
+  background-color: #f6f6f6;
+
 }
 
 .projects-container {
@@ -483,7 +485,7 @@ a.current-page{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fafafa;
+  background-color: #f6f6f6;
 }
 
 .workshop p {
@@ -633,7 +635,7 @@ div.emailsubmit2 .mc-field-group {
 }
 
 .what-youll-learn {
-  background-color: #ffffff;
+  background-color: #f6f6f6;
 }
 
 .what-youll-learn-container {
@@ -649,8 +651,6 @@ div.emailsubmit2 .mc-field-group {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 210px;
-  border-bottom: 1px solid #000000;
   padding-bottom: 10px;
 }
 
@@ -758,7 +758,7 @@ div.emailsubmit2 .mc-field-group {
 /* New workshop additions */
 section.workshops-section {
   font-family: GTWalsheimRegular;
-  background-color: #fafafa;
+  background-color: #f6f6f6;
   padding-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -775,11 +775,13 @@ section.workshops-section p {
   color: #a5a5a5;
 }
 
-section.workshops-section h2.workshop-section-title {
+section.workshops-section p.workshop-section-title {
   font-family: GTWalsheimRegular;
   text-align: center;
   font-size: 22px;
   margin-bottom: 30px;
+  color: #444;
+  padding-top: 20px;
 }
 
 section.workshops-section div.workshop-listing {
@@ -1044,7 +1046,57 @@ section.workshop-what-to-expect h2 {
   color: #ffc107 !important;
 }
 
-/* begin media queries */
+.partners {
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  font-family: GTWalsheimRegular;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.partner-logos {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.partner-logo-container {
+}
+
+.partner-logo {
+  width: 160px;
+  transition: opacity .15s linear;
+  cursor: pointer;
+}
+
+.partner-logo:hover {
+  opacity: .35
+}
+
+@media(max-width: 1400px) {
+  .partner-logo-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*
+//////////
+////////// begin media queries
+//////////
+*/
 
 @media(max-width: 1199px) {
   .mid {
@@ -1212,6 +1264,10 @@ section.workshop-what-to-expect h2 {
 } 
 
 @media (max-width: 739px) {
+  .submit-container {
+    display: flex;
+    justify-content: center;
+  }
   .workshop-title {
     margin-bottom: 20px;
   }
