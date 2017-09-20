@@ -7,7 +7,7 @@
     name="viewport"
     content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel='shortcut icon' href='static/favicon.png' type='image/x-icon'/ >
-  <link rel='stylesheet' href='static/app.css?v=1.5'>
+  <link rel='stylesheet' href='static/app.css?v=1.8'>
   <link rel='stylesheet' href='node_modules/normalize.css/normalize.css'>
   <link rel="stylesheet" href="static/fa/css/font-awesome.min.css">
   <script src="static/vex.combined.min.js"></script>
@@ -128,9 +128,69 @@
             </div>
           </a>
         </div>
+
       </div>
       <div class='clearfix'></div>
 
+
+      <!-- BOOTCAMP SIGNUPS -->
+      <div class='bootcamp-container'>
+
+        <div class="bootcamp">
+          <p class="bootcamp-title">React Native Bootcamp</p>
+          <p class="bootcamp-date">January 2018 | Denver</p>
+          <div class="bootcamp-button" id="denver-button">
+            <p class="bootcamp-button-text">Get Notified</p>
+          </div>
+        </div>
+
+        <div class="bootcamp">
+          <p class="bootcamp-title">React Native Bootcamp</p>
+          <p class="bootcamp-date">January 2018 | SF / Bay Area</p>
+          <div class="bootcamp-button" id="sf-button">
+            <p class="bootcamp-button-text">Get Notified</p>
+          </div>
+        </div>
+
+        <div class="bootcamp">
+          <p class="bootcamp-title">React Native Bootcamp</p>
+          <p class="bootcamp-date">February 2018 | Phoenix</p>
+          <div class="bootcamp-button" id="phoenix-button">
+            <p class="bootcamp-button-text">Get Notified</p>
+          </div>
+        </div>
+    
+        <div class="bootcamp">
+          <p class="bootcamp-title">React Native Bootcamp</p>
+          <p class="bootcamp-date">February 2018 | Los Angeles</p>
+          <div class="bootcamp-button" id="la-button">
+            <p class="bootcamp-button-text">Get Notified</p>
+          </div>
+        </div>
+
+        <div class="bootcamp">
+          <p class="bootcamp-title">React Native Bootcamp</p>
+          <p class="bootcamp-date">March 2018 | Seattle</p>
+          <div class="bootcamp-button" id="seattle-button">
+            <p class="bootcamp-button-text">Get Notified</p>
+          </div>
+        </div>
+
+        <div class="bootcamp">
+          <p class="bootcamp-title">React Native Bootcamp</p>
+          <p class="bootcamp-date">March 2018 | Boston</p>
+          <div class="bootcamp-button" id="boston-button">
+            <p class="bootcamp-button-text">Get Notified</p>
+          </div>
+        </div>
+
+        <div class='clearfix' />
+
+      </div>
+      
+      <!-- END BOOTCAMP SIGNUPS -->
+
+      <!-- BEGIN HOST INFOP -->
       <div class='city-request-container'>
         <p class='city-request-copy' style="padding-top: 20px;">
           Would you like us to host a workshop at your conference or event? If so, let's talk.
@@ -143,6 +203,8 @@
          </button>
        </div>
       </div>
+      <div class='clearfix' />
+      <!-- END HOST INFO -->
     </div>
   </section>
   <!-- end workshops -->
@@ -185,6 +247,24 @@
         <a href='https://www.bill.com' target='_blank'>
           <div class='partner-logo-container'>
             <img class='partner-logo' src='static/clients/billdotcom.png' />
+          </div>
+        </a>
+
+        <a href='https://www.ssense.com/' target='_blank'>
+          <div class='partner-logo-container'>
+            <img class='partner-logo' src='static/clients/ssense.png' />
+          </div>
+        </a>
+
+        <a href='https://www.visa.com' target='_blank'>
+          <div class='partner-logo-container'>
+            <img class='partner-logo' src='static/clients/visa.png' />
+          </div>
+        </a>
+
+        <a href='https://www.oppenheimerfunds.com' target='_blank'>
+          <div class='partner-logo-container'>
+            <img class='partner-logo' src='static/clients/oppenheimer.png' />
           </div>
         </a>
         
@@ -322,7 +402,7 @@
 
   <!-- begin email submit -->
   <div style='background-color: #DADADA;'>
-    <div class='emailsubmitcontainer' id='mc_embed_signup'>
+    <div class='emailsubmitcontainer' id='mc_embed_signup' style="background-color: #DADADA !important">
       <form action="//training.us15.list-manage.com/subscribe/post?u=fcb3f58f652e5d88361d150f4&amp;id=6cf059ad60" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div class='emailsubmit emailsubmit1'>
           <p class='emailsubmit-title1'>Stay updated!</p>
@@ -332,7 +412,7 @@
           <div class="mc-field-group">
             <input type='email' id='mce-EMAIL' placeholder='Your email' class='emailsubmitinput' name='EMAIL' />
           </div>
-          <div id="mce-responses" class="clear">
+          <div id="mce-responses" class="clear" style="overflow: visible !important;">
             <div class="response" id="mce-error-response" style="display:none">
               
             </div>
@@ -374,6 +454,7 @@
 
   <script src='static/jquery.min.js'></script>
   <script src='static/app.js'></script>
+  <script src='static/waitlist.js'></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -383,6 +464,160 @@
     ga('create', 'UA-86549528-1', 'auto');
     ga('send', 'pageview');
   </script>
+
+  <!-- SIGNUP FORMS :/ :/ THIS IS MESSY FORGIVE ME :) :)  -->
+  <!-- DENVER  -->
+   <!-- ////////////// ->
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet"
+        type="text/css">
+        <style type="text/css">
+          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div
+        class="signup-form-overlay denver"
+        id="mc_embed_signup"
+        style="box-shadow: 0px 1px 1px rgba(0, 0, 0, .3)">
+        <form action="//training.us15.list-manage.com/subscribe/post?u=fcb3f58f652e5d88361d150f4&amp;id=74717e2ebd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+          <label for="mce-EMAIL">Get Notified of Denver Bootcamp Launch</label>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcb3f58f652e5d88361d150f4_74717e2ebd" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+        <!-- ////////////// ->
+      <!--End mc_embed_signup-->
+
+    <!-- SF  -->
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div
+    class="signup-form-overlay sf"
+    id="mc_embed_signup">
+    <form action="//training.us15.list-manage.com/subscribe/post?u=fcb3f58f652e5d88361d150f4&amp;id=8ddd550e4d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL">Get Notified of SF / Bay Area Bootcamp Launch</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcb3f58f652e5d88361d150f4_8ddd550e4d" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+    <!-- SF  -->
+
+    <!-- PHOENIX  -->
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup"
+    class="signup-form-overlay phoenix"
+    >
+    <form action="//training.us15.list-manage.com/subscribe/post?u=fcb3f58f652e5d88361d150f4&amp;id=1e5638c9f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL">Get Notified of Phoenix Bootcamp Launch</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcb3f58f652e5d88361d150f4_1e5638c9f6" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+
+<!--End mc_embed_signup-->
+
+    <!-- PHOENIX  -->
+
+    <!-- LA  -->
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div
+    class="signup-form-overlay la"
+    id="mc_embed_signup">
+    <form action="//training.us15.list-manage.com/subscribe/post?u=fcb3f58f652e5d88361d150f4&amp;id=3e13f63019" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL">Get Notified of Los Angeles Bootcamp Launch</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcb3f58f652e5d88361d150f4_3e13f63019" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+
+<!--End mc_embed_signup-->
+    <!-- LA  -->
+
+    <!-- SEATTLE  -->
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup"
+    class="signup-form-overlay seattle"
+    >
+    <form action="//training.us15.list-manage.com/subscribe/post?u=fcb3f58f652e5d88361d150f4&amp;id=ae3b31d0aa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL">Get Notified of Seattle Bootcamp Launch</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcb3f58f652e5d88361d150f4_ae3b31d0aa" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+
+  <!--End mc_embed_signup-->
+    <!-- SEATTLE  -->
+
+    <!-- BOSTON  -->
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup"
+    class="signup-form-overlay boston"
+    >
+    <form action="//training.us15.list-manage.com/subscribe/post?u=fcb3f58f652e5d88361d150f4&amp;id=d7ca6994f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL">Get Notified of Boston Bootcamp Launch</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcb3f58f652e5d88361d150f4_d7ca6994f6" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+    <!-- BOSTON  -->
 
 </body>
 </html>

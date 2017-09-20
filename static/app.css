@@ -852,6 +852,8 @@ section.workshops-section div.workshop-listing p.workshop-description {
 
 section.workshops-section div.city-request-container{
   text-align:center;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
 }
 
 section.workshops-section div.city-request-container p.city-request-copy {
@@ -1085,18 +1087,99 @@ section.workshop-what-to-expect h2 {
   opacity: .35
 }
 
-@media(max-width: 1400px) {
-  .partner-logo-container {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+/*
+//////////
+////////// Signup Forms
+//////////
+*/
+
+.bootcamp-container {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
+
+.bootcamp {
+  width: 333px;
+  padding: 20px;
+  float: left;
+}
+
+.bootcamp-title {
+  font-size: 18px;
+  font-family: GTWalsheimRegular;
+  color: black !important;
+  text-align: center;
+}
+
+.bootcamp-date {
+  font-size: 18px;
+  font-family: GTWalsheimBold;
+  color: black !important;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bootcamp-button {
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100% !important;
+}
+
+.bootcamp-button-text:hover {
+  background-color: #ffc107;
+}
+
+.bootcamp-button-text {
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #ffc107;
+  border-radius: 24px;
+  padding: 9px 34px 10px;
+  transition: all .2s;
+  color: black !important;
+  transition: all .25s linear;
+}
+
+.bootcamp-description {
+  font-family: GTWalsheimRegular;
+  color: #a5a5a5;
+}
+
+/*
+//////////
+////////// Signup Form Overlay
+//////////
+*/
+
+.signup-form-overlay {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+  padding: 20px 20px;
+  position: fixed;
+  top: calc(50% - 95px);
+  left: calc(50% - 150px);
+  width: 300px;
+}
+
+.denver, .sf, .phoenix, .boston, .la, .seattle {
+  display: none;
+}
+
 
 /*
 //////////
 ////////// begin media queries
 //////////
 */
+
+@media(max-width: 1400px) {
+  .partner-logo-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
 @media(max-width: 1199px) {
   .mid {
@@ -1133,6 +1216,23 @@ section.workshop-what-to-expect h2 {
 }
 
 @media (max-width: 1050px) {
+  .bootcamp-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .bootcamp {
+    width: 100%;
+    padding: 20px;
+    float: left;
+  }
+
+  .bootcamp-button {
+    width: 300px !important;
+    margin: 10px auto 40px !important;;
+  }
+
   .hero {
     background-attachment: scroll;
   }
