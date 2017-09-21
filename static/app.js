@@ -10,6 +10,12 @@ $(document).ready(function() {
       }, 900);
   })
 
+  $('.scrolltoconsulting').click(function() {
+    $('html, body').animate({
+         scrollTop: $("#consulting").offset().top - 30
+     }, 900);
+ })
+
   $('.scrolltoprivatetraining').click(function() {
      $('html, body').animate({
           scrollTop: $("#onsitetraining").offset().top - 30

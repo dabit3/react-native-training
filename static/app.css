@@ -99,7 +99,7 @@ a.current-page{
 
 .hero {
   /*background-image: url(hero.png);*/
-  background-image: url(rntraining6.jpg);
+  background-image: url(images/classdark.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -279,6 +279,8 @@ a.current-page{
   padding-bottom: 20px;
 }
 
+.consulting {}
+
 .on-site-training-main-title {
   font-family: GTWalsheimRegular;
   text-align: center;
@@ -303,7 +305,7 @@ a.current-page{
 }
 
 .offering-list {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .offering-list > div {
@@ -591,11 +593,13 @@ a.current-page{
 
 .emailsubmit-title1 {
   font-family: GTWalsheimRegular;
+  font-size: 18px;
 }
 
 .emailsubmit-title2 {
   font-family: GTWalsheimRegular;
   margin-top: 4px;
+  font-size: 18px;
 }
 
 .overlay-button-submit:hover {
@@ -616,7 +620,7 @@ a.current-page{
   font-family: GTWalsheimRegular;
   padding: 13px 28px;
   margin-left: 20px;
-  border: 2px solid #ffc107;
+  border: 2px solid #ffc107 !important;
   border-radius: 999px;
   font-size: 18px;
   background-color:transparent;
@@ -730,16 +734,6 @@ div.emailsubmit2 .mc-field-group {
 
 .offering-list a {
   text-decoration: none;
-}
-
-.workshop-button {
-  width: 190px;
-  color: black ;
-}
-
-.workshop-button:hov {
-  width: 190px;
-  color: black ;
 }
 
 .online-training-container {
@@ -867,7 +861,7 @@ section.workshops-section a {
 section.workshops-section button.workshop-button {
   font-size: 18px;
   width: 230px;
-  border: 3px solid #ededed;
+  border: 3px solid #a5a5a5;
   padding: 9px 34px;
   text-align: center;
   border-radius: 999px;
@@ -877,7 +871,41 @@ section.workshops-section button.workshop-button {
 }
 
 section.workshops-section button.workshop-button:hover {
-  background-color: #ededed;
+  background-color: #a5a5a5;
+  color: white;
+}
+
+button.consulting-button {
+  font-size: 18px;
+  width: 300px;
+  border: 3px solid #ffc107;
+  padding: 9px 34px;
+  text-align: center;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .25s linear;
+  background-color: #ffc107;
+}
+
+button.consulting-button:hover {
+  background-color: #ffc107;
+}
+
+.gray-button {
+  font-size: 18px;
+  width: 300px;
+  border: 3px solid #a5a5a5;
+  padding: 9px 34px;
+  text-align: center;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .25s linear;
+  background-color: #fff;
+}
+
+.gray-button:hover {
+  background-color: #a5a5a5;
+  color: white;
 }
 
 /* Single Workshop Page */
@@ -1216,6 +1244,10 @@ section.workshop-what-to-expect h2 {
 }
 
 @media (max-width: 1050px) {
+  .consulting {
+    margin-bottom: 40px !important;
+    margin-top: 10px !important;
+  }
   .bootcamp-container {
     width: 100%;
     margin: 0 auto;
