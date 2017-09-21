@@ -274,12 +274,15 @@ a.current-page{
   width: 1050px;
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 20px;
 }
 
-.consulting {}
+.consulting {
+  margin-bottom: 40px !important;
+  margin-top: 0px !important;
+}
 
 .on-site-training-main-title {
   font-family: GTWalsheimRegular;
@@ -1245,7 +1248,6 @@ section.workshop-what-to-expect h2 {
 
 @media (max-width: 1050px) {
   .consulting {
-    margin-bottom: 40px !important;
     margin-top: 10px !important;
   }
   .bootcamp-container {
