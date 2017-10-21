@@ -99,7 +99,7 @@ a.current-page{
 
 .hero {
   /*background-image: url(hero.png);*/
-  background-image: url(images/classdark.jpg);
+  background-image: url(images/rntrainingbg4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1269,6 +1269,7 @@ section.workshop-what-to-expect h2 {
 
   .hero {
     background-attachment: scroll;
+    background-image: url(images/classdark.jpg);
   }
   .pdf-button-container {
     margin-bottom: 20px;
