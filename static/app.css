@@ -113,11 +113,15 @@ a.current-page{
 }
 
 .hero-workshop-sf {
-  background-image: url(sf.jpg);
+  background-image: url(sf.jpg)  !important;
 }
 
 .hero-workshop-nyc {
-  background-image: url(nyc.jpg);
+  background-image: url(nyc.jpg) !important;
+}
+
+.hero-workshop-denver {
+  background-image: url(denver.jpg)  !important;
 }
 
 .bg-lightgrey {
@@ -785,8 +789,12 @@ section.workshops-section div.workshop-listing {
   width: 33%;
   float:left;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
 }
+
+/* section.workshops-section .child {
+  width: auto !important;
+} */
 
 section.workshops-section div.workshop-listing h3 {
   text-align: center;
@@ -1355,6 +1363,10 @@ section.workshop-what-to-expect h2 {
  
   section.workshops-section div.workshop-listings div.workshop-listing{
     width: 100%;
+  }
+
+  .workshop-listings-center {
+
   }
 
   section.workshops-section div.workshop-listings div.workshop-listing p.workshop-description{
